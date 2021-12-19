@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/scale_types_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/center_radio_button"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="center"/>
+
+        <RadioButton
+            android:id="@+id/center_crop_radio_button"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="centerCrop"/>
+
+        <RadioButton
+            android:id="@+id/center_inside_radio_button"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="centerInside"/>
+
+        <RadioButton
+            android:id="@+id/fit_center_radio_button"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="fitCenter"/>
+
+        <RadioButton
+            android:id="@+id/fit_start_radio_button"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="fitStart"/>
+
+        <RadioButton
+            android:id="@+id/fit_end_radio_button"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="fitEnd"/>
+
+        <RadioButton
+            android:id="@+id/fit_xy_radio_button"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="fitXY"/>
+
+    </RadioGroup>
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/adjust_view_bounds_check_box"-->
+<!--        android:layout_width="192dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="AdjustViewBounds"-->
+<!--        android:layout_marginBottom="24dp"/>-->
+
+    <ImageView
+        android:id="@+id/center_image_view"
+        android:background="@color/gray"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:src="@drawable/logo"
+        android:scaleType="center"
+        tools:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/center_crop_image_view"
+        android:background="@color/gray"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/center_inside_image_view"
+        android:background="@color/gray"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:src="@drawable/logo"
+        android:scaleType="centerInside"
+        tools:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/fit_center_image_view"
+        android:background="@color/gray"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:src="@drawable/logo"
+        android:scaleType="fitCenter"
+        tools:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/fit_start_image_view"
+        android:background="@color/gray"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:src="@drawable/logo"
+        android:scaleType="fitStart"
+        tools:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/fit_end_image_view"
+        android:background="@color/gray"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:src="@drawable/logo"
+        android:scaleType="fitEnd"
+        tools:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/fit_xy_image_view"
+        android:background="@color/gray"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"
+        tools:visibility="gone"/>
+
+</LinearLayout>

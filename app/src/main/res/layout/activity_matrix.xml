@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MatrixActivity">
+
+    <RadioGroup
+        android:id="@+id/matrix_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/none_radio_button"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="none"/>
+
+        <RadioButton
+            android:id="@+id/translate_radio_button"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="translate"/>
+
+        <RadioButton
+            android:id="@+id/rotate_radio_button"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="rotate"/>
+
+        <RadioButton
+            android:id="@+id/scale_radio_button"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="scale"/>
+
+        <RadioButton
+            android:id="@+id/skew_radio_button"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="skew"/>
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/matrix_image_view"
+        android:background="@color/gray"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:src="@drawable/logo"
+        android:scaleType="matrix"
+        tools:visibility="visible" />
+
+</LinearLayout>
